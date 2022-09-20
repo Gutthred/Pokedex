@@ -50,11 +50,12 @@ export const Home = () => {
             <ProgressBar />
           ) : (
             pokemons.map((pokemon, key) => {
+              console.log(pokemon.data.sprites.other.home.front_default);
               return (
                 <Grid item xs={12} sm={6} md={4} lg={2} key={key}>
                   <PokemonCard
                     name={pokemon.data.name}
-                    img={pokemon.data.sprites.front_default}
+                    img={pokemon.data.sprites.other.home.front_default}
                     types={pokemon.data.types}
                   />
                 </Grid>
