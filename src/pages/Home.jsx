@@ -12,7 +12,7 @@ export const Home = () => {
 
   const getPokemons = async () => {
     var pokemonId = [];
-    for (var i = 1; i < 387; i++) {
+    for (var i = 1; i < 152; i++) {
       pokemonId.push(`https://pokeapi.co/api/v2/pokemon/${i}/`);
     }
     const response = await axios
